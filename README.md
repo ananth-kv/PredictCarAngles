@@ -1,4 +1,4 @@
-# PredictCarAngles
+# Predict Steering wheel angle from digital image
 
 As a term project for CMSC 491/691, the authors presented a deep learning implementation to predict steering wheel angles for images captured from a front facing camera on a car. The authors witnessed good accuracy, although that was largely due to the skew in the dataset. This project was a fantastic opportunity to get our hands dirty with the practical nuances of building and training a real world CNN on a real world dataset.
 
