@@ -2,8 +2,6 @@ require 'torch'
 require 'nn'
 require 'optim'
 
--- to specify these at runtime, you can do, e.g.:
---    $ lr=0.001 th main.lua
 opt = {
   dataset = 'simple',   -- indicates what dataset load to use (in data.lua)
   nThreads = 4,        -- how many threads to pre-fetch data
@@ -23,7 +21,7 @@ opt = {
   randomize = 1,        -- whether to shuffle the data file or not
   cropping = 'random',  -- options for data augmentation
   display_port = 8000,  -- port to push graphs
-  name = 'regression', --paths.basename(paths.thisfile()):sub(1,-5), -- the name of the experiment (by default, filename)
+  name = 'regression',  -- the name of the experiment (by default, filename)
   data_root = '/do_not_store/ananth/dataset/train/',
   data_list = '/do_not_store/ananth/dataset/train/train_numbers.txt',
   mean = {-0.083300798050439,-0.10651495109198,-0.17295466315224},
@@ -105,7 +103,6 @@ end
 print(net)
 
 -- define the loss
---local criterion = nn.CrossEntropyCriterion()
 local criterion = nn.MSECriterion()
 
 
@@ -136,8 +133,8 @@ end
 local parameters, gradParameters = net:getParameters()
 
 -- show graphics
-disp = require 'display'
-disp.url = 'http://localhost:' .. opt.display_port .. '/events'
+--disp = require 'display'
+--disp.url = 'http://localhost:' .. opt.display_port .. '/events'
 
 -- optimization closure
 -- the optimizer will call this function to get the gradients
