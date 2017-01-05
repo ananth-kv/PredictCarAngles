@@ -18,10 +18,6 @@ function data.new(n, dataset_name, opt_)
    local donkey_file
    if dataset_name == 'simple' then
        donkey_file = 'donkey_simple.lua'
-   elseif dataset_name == 'hdf5' then
-       donkey_file = 'donkey_hdf5.lua'
-   elseif dataset_name == 'video' then
-       donkey_file = 'donkey_video.lua'
    else
       error('Unknown dataset: ' .. dataset_name)
    end
