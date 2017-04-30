@@ -7,4 +7,4 @@ As a term project for CMSC 491/691, the authors presented a deep learning implem
 https://medium.com/udacity/challenge-2-using-deep-learning-to-predict-steering-angles-f42004a36ff3#.aweyunrrm
 
 
-Report of our Project: [here]{https://docs.google.com/document/d/1jbs67PsWJFGj9GhOno1G3V_u8zMnXac4-oreUTQsHeA/edit?ts=5855d71d#}
+Report of our Project: [here](https://docs.google.com/document/d/1jbs67PsWJFGj9GhOno1G3V_u8zMnXac4-oreUTQsHeA/edit?ts=5855d71d#)
